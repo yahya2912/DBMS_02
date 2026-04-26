@@ -29,3 +29,4 @@ jobs:
             --title "DBMS_02 Schema ${{ github.ref_name }}" \
             --notes "Auto-generated ER diagram for tag \`${{ github.ref_name }}\`." \
             schema.svg
+
