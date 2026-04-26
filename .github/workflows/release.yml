@@ -20,6 +20,9 @@ jobs:
 
       - name: Render SVG from PlantUML source
         run: plantuml -tsvg schema.puml
+      
+      - name: Render PNG from PlantUML source
+        run: plantuml -tpng schema.puml
 
       - name: Create GitHub Release and upload artifact
         env:
@@ -28,5 +31,5 @@ jobs:
           gh release create "${{ github.ref_name }}" \
             --title "DBMS_02 Schema ${{ github.ref_name }}" \
             --notes "Auto-generated ER diagram for tag \`${{ github.ref_name }}\`." \
-            schema.svg
+            schema.svg schema.png
 
