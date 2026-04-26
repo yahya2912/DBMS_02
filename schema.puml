@@ -56,7 +56,7 @@ entity "Loan" as L {
 
 ' ============================================================
 ' TODO: Add relationships here
- A }||--|{ B : "writes"
+ A }|--|{ B : "writes"
  B ||--|{ C : "is available as"
  M ||--o{ L : "places"
  C ||--o{ L : "is borrowed in"
