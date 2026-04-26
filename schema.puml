@@ -35,7 +35,7 @@ entity "Copy" as C {
   * CopyNo            : INTEGER     <<PK>>
   --
   ShelfLocation       : VARCHAR(30)
-  Condition           : VARCHAR(20)
+  Condition           : VARCHAR(20) ' good | damaged | lost
 }
 
 entity "Member" as M {
